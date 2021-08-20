@@ -14,7 +14,7 @@
                     <li class="main-menu-item"><a href="#">Каталог</a></li>
                     <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
                     <li class="main-menu-item"><a href="#">Отзывы</a></li>
-                    <li class="main-menu-item logo"><a href="#"><img src="./images/logo.png"></a></li>
+                    <li class="main-menu-item logo"><a href="/"><img src="./images/logo.png" alt="Logo"></a></li>
                     <li class="main-menu-item"><a href="#">Спецпредложения</a></li>
                     <li class="main-menu-item"><a href="#">Контакты</a></li>
                     <li class="main-menu-item"><a href="#">Корзина</a></li>
@@ -25,6 +25,8 @@
     <main class="main-content">
         <div class="wrapper">
             <section class="catalog">
+                <img src="images/author-bouquet-1.jpg" alt="Unique fresh bouquet 1">
+                <img src="images/author-bouquet-2.jpg" alt="Unique fresh bouquet 2">
                 <h1 class="catalog-header">Авторские букеты в Петербурге</h1>
                 <p class="catalog-intro">Оригинальные свежие букеты с доставкой по всему городу</p>
                 <a href="#" class="button">Смотреть каталог</a>
@@ -50,7 +52,7 @@
                     <h2 class="slider-header">Популярные букеты</h2>
                     <div class="slider-container">
                         <div class="slider-item" id="slider-item-1">
-                            <img class="slider-item-image" src="./images/popular-bouquet-1.png" alt="Popular bouquet">
+                            <img class="slider-item-image" src="./images/popular-bouquet-1.png" alt="Birthday or annyversary elegant bouquet">
                             <h3 class="slider-item-header">Букет «Нежность»</h3>
                             <p class="slider-item-description">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
                             <span class="slider-item-dimension">30 × 40 см</span>
@@ -62,20 +64,35 @@
                 </div>
             </section>
             <section class="divisions">
-                <dl class="divisions-list">
-                    <div class="divisions-item">
-                        <dt class="divisions-item-title">Свадебные букеты</dt>
-                        <dd class="divisions-item-description">Букеты для невест</dd>
+                <div class="divisions-list">
+                    <div class="divisions-list-item">
+                        <div class="divisions-list-item-image">
+                            <img src="images/catalog-bouquet-1.jpg" alt="Wedding bouquet">
+                        </div>
+                        <div class="divisions-list-item-content">
+                            <div class="divisions-list-item-title">Свадебные букеты</div>
+                            <div class="divisions-list-item-description">Букеты для невест</div>
+                        </div>
                     </div>
-                    <div class="divisions-item">
-                        <dt class="divisions-item-title">Букеты с пионами</dt>
-                        <dd class="divisions-item-description">Букеты с сезонными пионами</dd>
+                    <div class="divisions-list-item">
+                        <div class="divisions-list-item-image">
+                            <img src="images/catalog-bouquet-2.jpg" alt="Bouquet with peonies">
+                        </div>
+                        <div class="divisions-list-item-content">
+                            <div class="divisions-list-item-title">Букеты с пионами</div>
+                            <div class="divisions-list-item-description">Букеты с сезонными пионами</div>
+                        </div>
                     </div>
-                    <div class="divisions-item">
-                        <dt class="divisions-item-title">Выбрать букет</dt>
-                        <dd class="divisions-item-description">Букеты в ассортименте</dd>
+                    <div class="divisions-list-item">
+                        <div class="divisions-list-item-image">
+                            <img src="images/catalog-bouquet-3.jpg" alt="Assorted bouquets">
+                        </div>
+                        <div class="divisions-list-item-content">
+                            <div class="divisions-list-item-title">Выбрать букет</div>
+                            <div class="divisions-list-item-description">Букеты в ассортименте</div>
+                        </div>
                     </div>
-                </dl>
+                </div>
             </section>
             <seciton class="sale">
                 <h2 class="sale-header">Скидка 10% на первый заказ</h2>
@@ -104,9 +121,9 @@
             </section>
             <section class="news">
                 <div class="news-images">
-                    <img class="news-image-little" src="./images/news-bouquet-little-1.jpg" alt="">
-                    <img class="news-image-little" src="./images/news-bouquet-little-2.jpg" alt="">
-                    <img class="news-image-big" src="./images/news-bouquet-big-1.jpg" alt="">
+                    <img class="news-image-little" src="./images/news-bouquet-little-1.jpg" alt="The new bouquet 1">
+                    <img class="news-image-little" src="./images/news-bouquet-little-2.jpg" alt="The new bouquet 2">
+                    <img class="news-image-big" src="./images/news-bouquet-big-1.jpg" alt="The new bouquet 3">
                 </div>
                 <h2 class="news-header">Следите за нашими новостями</h2>
                 <p class="news-description">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
@@ -160,9 +177,9 @@
     </main>
     <footer class="page-footer">
         <div class="wrapper">
-            <div class="logo footer-logo">
+            <a class="logo footer-logo" href="/">
                 <img src="./images/logo.png" alt="Logo">
-            </div>
+            </a>
             <ul class="footer-menu">
                 <li class="footer-menu-item"><a href="#">Каталог</a></li>
                 <li class="footer-menu-item"><a href="#">Доставка и оплата</a></li>
