@@ -1,0 +1,33 @@
+[class$="visuality_hidden"] {
+    display: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ae7c78;
+}
+
+i {
+    font-style: italic;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 59px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
+
