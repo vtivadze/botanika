@@ -1,4 +1,4 @@
-[class$="visuality_hidden"] {
+[class$="visibility_hidden"] {
     display: none;
 }
 
@@ -29,5 +29,25 @@ h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
+}
+
+.division-list-item {
+    background-color: #bea09d;
+}
+
+.discount {
+    background-color: #ae7c78;
+}
+
+.news__image {
+    background-color: #dfe4e8;
+}
+
+.contacts {
+    background-color: #fdfaf2;
+}
+
+.footer {
+    background-color: #ae7c78;
 }
 
