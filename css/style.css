@@ -1,34 +1,21 @@
+:root {
+    --main-font: normal normal normal 16px/20px Montserrat, sans-serif;
+    --main-header-font: normal normal bold 36px/48px "Playfair Display", serif;
+    --main-color: #ae7c78;
+}
+
 [class$="visibility_hidden"] {
     display: none;
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ae7c78;
-}
-
-i {
-    font-style: italic;
+    font: var(--main-font);
+    color: var(--main-color);
 }
 
 h1,
 h2 {
-    font-family: "Playfair Display", serif;
-}
-
-h1 {
-    font-size: 44px;
-    line-height: 59px;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
+    font-family: var(--main-header-font);
 }
 
 .division-list-item {
