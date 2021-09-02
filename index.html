@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="main-document">
     <header class="page-header">
-        <a class="logo page-header__logo" href="/"><img src="files/logo.svg" alt="Лого"></a>
+        <a class="logo page-header__logo" href="/"><img src="files/logo-header.svg" alt="Лого"></a>
         <nav class="main-menu">
             <div class="wrapper">
                 <ul class="main-menu__list main-menu__list--reset-list">
@@ -22,7 +22,7 @@
                         <a class="main-menu__item-link" href="#catalog-preview">Каталог</a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__item-link" href="#feature">Доставка и оплата</a>
+                        <a class="main-menu__item-link" href="#features">Доставка и оплата</a>
                     </li>
                     <li class="main-menu__item">
                         <a class="main-menu__item-link" href="#reviews">Отзывы</a>
@@ -49,14 +49,14 @@
                 <a href="#" class="button catalog-preview__button">Смотреть каталог</a>
                 <img
                     class="catalog-preview__image catalog-preview__image--horizontally_left catalog-preview__image--vertically_bottom"
-                    src="files/catalog-bouquet-1.jpg"
+                    src="files/catalog-bouquet-with-tulips.jpg"
                     alt="Неповторимый свежий букет тюльпан"
                     width="386"
                     height="404"
                 >
                 <img
                     class="catalog-preview__image catalog-preview__image--horizontally_right catalog-preview__image--vertically_top"
-                    src="files/catalog-bouquet-2.jpg"
+                    src="files/catalog-bouquet-with-rouses.jpg"
                     alt="Неповторимый свежий букет роз"
                     width="387"
                     height="420"
@@ -93,7 +93,7 @@
                             <a class="button slider__item-button" href="#">Заказать</a>
                             <img
                                 class="slider__item-image"
-                                src="files/popular-bouquet-1.png"
+                                src="files/popular-bouquet-with-white-roses.png"
                                 alt="Шикарный букет для день рождения или юбилей"
                                 width="387"
                                 height="438"
@@ -102,50 +102,52 @@
                     </div>
                     <div class="slider__controls">
                         <button class="arrow slider__controls-arrow slider_controls-arrow--direction_left" type="button">
+                            <img src="img/arrow-left.png" alt="Arrow left">
                             <span class="slider__controls-title slider__controls-title--visibility_hidden">Назад</span>
                         </button>
                         <button class="arrow slider__controls-arrow slider_controls-arrow--direction_right" type="button">
+                            <img src="img/arrow-right.png" alt="Arrow right">
                             <span class="slider__controls-title slider__controls-title--visibility_hidden">Вперед</span>
                         </button>
                     </div>
                 </div>
             </section>
 
-            <section class="division">
-                <div class="division-list">
-                    <article class="division-list-item">
+            <section class="catalog-divisions">
+                <div class="catalog-divisions__list">
+                    <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="division-list-item__title">Свадебные букеты</h2>
-                            <p class="division-list-item__description">Букеты для невест</p>
+                            <h2 class="catalog-divisions__list-item-title">Свадебные букеты</h2>
+                            <p class="catalog-divisions__list-item-description">Букеты для невест</p>
                             <img
-                                class="division-list-item__image"
-                                src="files/division-bouquet-1.jpg"
+                                class="catalog-divisions__list-item-image"
+                                src="files/division-bridal-bouquet.jpg"
                                 alt="Свадебный букет"
                                 width="387"
                                 height="442"
                             >
                         </a>
                     </article>
-                    <article class="division-list-item">
+                    <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="division-list-item__title">Букеты с пионами</h2>
-                            <p class="division-list-item__description">Букеты с сезонными пионами</p>
+                            <h2 class="catalog-divisions__list-item-title">Букеты с пионами</h2>
+                            <p class="catalog-divisions__list-item-description">Букеты с сезонными пионами</p>
                             <img
-                                class="division-list-item__image"
-                                src="files/division-bouquet-2.jpg"
+                                class="catalog-divisions__list-item-image"
+                                src="files/division-bouquets-with-peonies.jpg"
                                 alt="Букет с пионами"
                                 width="387"
                                 height="442"
                             >
                         </a>
                     </article>
-                    <article class="division-list-item">
+                    <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="division-list-item__title">Выбрать букет</h2>
-                            <p class="division-list-item__description">Букеты в ассортименте</p>
+                            <h2 class="catalog-divisions__list-item-title">Выбрать букет</h2>
+                            <p class="catalog-divisions__list-item-description">Букеты в ассортименте</p>
                             <img
-                                class="division-list-item__image"
-                                src="files/division-bouquet-3.jpg"
+                                class="catalog-divisions__list-item-image"
+                                src="files/division-assorted-bouquets.jpg"
                                 alt="Ассорти букетов"
                                 width="387"
                                 height="442"
@@ -160,31 +162,31 @@
                 <p class="discount__description">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
                 <img
                     class="discount__image"
-                    src="files/discount-bouquet-1.jpg"
+                    src="files/discount-mixed-bouquet.jpg"
                     alt="Большой смешанный букет из роз и тюльпан"
                     width="590"
                     height="391"
                 >
             </section>
 
-            <section class="feature" id="feature">
-                <h2 class="feature__header">4 шага к идеальному букету</h2>
+            <section class="features" id="features">
+                <h2 class="features__header">4 шага к идеальному букету</h2>
                 <dl>
-                    <div class="feature__item">
-                        <dt class="feature__item-title">Заказ</dt>
-                        <dd class="feature__item-description">Выберите понравившийся букет из каталога и оформите заказ</dd>
+                    <div class="features__item">
+                        <dt class="features__item-title">Заказ</dt>
+                        <dd class="features__item-description">Выберите понравившийся букет из каталога и оформите заказ</dd>
                     </div>
-                    <div class="feature__item">
-                        <dt class="feature__item-title">Уточнение деталей</dt>
-                        <dd class="feature__item-description">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</dd>
+                    <div class="features__item">
+                        <dt class="features__item-title">Уточнение деталей</dt>
+                        <dd class="features__item-description">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</dd>
                     </div>
-                    <div class="feature__item">
-                        <dt class="feature__item-title">Оплата</dt>
-                        <dd class="feature__item-description">Оплатить заказ можно онлайн на сайте или при получении</dd>
+                    <div class="features__item">
+                        <dt class="features__item-title">Оплата</dt>
+                        <dd class="features__item-description">Оплатить заказ можно онлайн на сайте или при получении</dd>
                     </div>
-                    <div class="feature__item">
-                        <dt class="feature__item-title">Доставка</dt>
-                        <dd class="feature__item-description">Курьер позвонит за час до прибытия и доставит заказ вовремя</dd>
+                    <div class="features__item">
+                        <dt class="features__item-title">Доставка</dt>
+                        <dd class="features__item-description">Курьер позвонит за час до прибытия и доставит заказ вовремя</dd>
                     </div>
                 </dl>
             </section>
@@ -212,21 +214,21 @@
                 <div class="news__images">
                     <img
                         class="news__image news__image--size_little"
-                        src="files/news-bouquet-little-1.jpg"
+                        src="files/news-mixed-bouquet.jpg"
                         alt="Смешанный новый букет"
                         width="285"
                         height="220"
                     >
                     <img
                         class="news__image news__image--size_little"
-                        src="files/news-bouquet-little-2.jpg"
+                        src="files/news-bouquet-with-roses.jpg"
                         alt="Новый букет роз"
                         width="285"
                         height="220"
                     >
                     <img
                         class="news__image news__image--size_big"
-                        src="files/news-bouquet-big-1.jpg"
+                        src="files/news-bouquet-with-cloves.jpg"
                         alt="Новый букет тюльпан"
                         width="387"
                         height="460"
@@ -255,24 +257,24 @@
         <section class="contacts" id="contacts">
             <div class="wrapper">
                 <h2 class="contacts__intro">Мы ждем вас</h2>
-                <address class="contacats__list">
+                <address class="contacts__list">
                     <div class="contacts__item">
-                        <span class="ocntacts__item-title">Приходите к нам:</span>
-                        <span class="ocntacts__item-description">Санкт-Петербург, ул. Большая Конюшенная, 19</span>
+                        <span class="contacts__item-title">Приходите к нам:</span>
+                        <span class="contacts__item-description">Санкт-Петербург, ул. Большая Конюшенная, 19</span>
                     </div>
-                    <div class="ocntacts__item">
-                        <span class="ocntacts__item-title">Режим работы:</span>
-                        <span class="ocntacts__item-description">Пн-Вск, с 9-00 до 20-00</span>
+                    <div class="contacts__item">
+                        <span class="contacts__item-title">Режим работы:</span>
+                        <span class="contacts__item-description">Пн-Вск, с 9-00 до 20-00</span>
                     </div>
-                    <div class="ocntacts__item">
-                        <span class="ocntacts__item-title">Позвоните нам:</span>
-                        <span class="ocntacts__item-description">
+                    <div class="contacts__item">
+                        <span class="contacts__item-title">Позвоните нам:</span>
+                        <span class="contacts__item-description">
                             <a href="tel:+78129834719">+ 7 (812) 983-47-19</a>
                         </span>
                     </div>
-                    <div class="ocntacts__item">
-                        <span class="ocntacts__item-title">Напишите нам:</span>
-                        <span class="ocntacts__item-description">
+                    <div class="contacts__item">
+                        <span class="contacts__item-title">Напишите нам:</span>
+                        <span class="contacts__item-description">
                             <a href="mailto:info@botanika.ru">info@botanika.ru</a>
                         </span>
                     </div>
@@ -285,16 +287,26 @@
     <footer class="page-footer">
         <div class="wrapper">
     
-            <a class="logo page-footer__logo" href="#" style="background-color: orange;">
-                <img class="logo__image" src="files/logo.svg" alt="Лого">
+            <a class="logo page-footer__logo" href="#">
+                <img class="logo__image" src="files/logo-footer.svg" alt="Лого">
             </a>
     
             <ul class="secondary-menu secondary-menu--reset-list page-footer__menu">
-                <li class="secondary-menu__item"><a href="#catalog-preview">Каталог</a></li>
-                <li class="secondary-menu__item"><a href="#feature">Доставка и оплата</a></li>
-                <li class="secondary-menu__item"><a href="#reviews">Отзывы</a></li>
-                <li class="secondary-menu__item"><a href="#discount">Спецпредложения</a></li>
-                <li class="secondary-menu__item"><a href="#contacts">Контакты</a></li>
+                <li class="secondary-menu__item">
+                    <a class="secondary-menu__item-link" href="#catalog-preview">Каталог</a>
+                </li>
+                <li class="secondary-menu__item">
+                    <a class="secondary-menu__item-link" href="#features">Доставка и оплата</a>
+                </li>
+                <li class="secondary-menu__item">
+                    <a class="secondary-menu__item-link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="secondary-menu__item">
+                    <a class="secondary-menu__item-link" href="#discount">Спецпредложения</a>
+                </li>
+                <li class="secondary-menu__item">
+                    <a class="secondary-menu__item-link" href="#contacts">Контакты</a>
+                </li>
             </ul>
     
             <ul class="socials socials--reset-list page-footer__socials">

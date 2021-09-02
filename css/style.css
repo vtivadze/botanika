@@ -1,40 +1,200 @@
+/* General styles */
 :root {
-    --main-font: normal normal normal 16px/20px Montserrat, sans-serif;
-    --main-header-font: normal normal bold 36px/48px "Playfair Display", serif;
+    --main-font: normal normal 400 16px/20px Montserrat, sans-serif;
+    --main-header-font: normal normal 700 36px/48px "Playfair Display", serif;
     --main-color: #ae7c78;
 }
 
-[class$="visibility_hidden"] {
+[class*="--reset-list"] {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+[class*="--visibility_hidden"] {
     display: none;
 }
 
-body {
+.main-document {
     font: var(--main-font);
     color: var(--main-color);
 }
 
-h1,
-h2 {
-    font-family: var(--main-header-font);
+.main-document h1,
+.main-document h2 {
+    margin: 0;
+    padding: 0;
+
+    font: var(--main-header-font);
 }
 
-.division-list-item {
-    background-color: #bea09d;
+.main-document p {
+    margin: 0;
 }
 
+.main-document a {
+    text-decoration: none;
+}
+
+.button {
+    color: #ffffff;
+
+    background-color: var(--main-color);
+}
+/* General styles */
+
+/* Page header */
+.main-menu__item-link {
+    font: var(--main-font);
+    color: var(--main-color);
+}
+/* Page header */
+
+
+/* Section catalog preview */
+.catalog-preview__header {
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+}
+
+.catalog-preview__header i {
+    font-style: italic;
+}
+
+.catalog-preview__intro {
+    font-size: 24px;
+    line-height: 29px;
+}
+/* Section catalog preview */
+
+/* Section advantage */
+.advantage__item-title {
+    font-weight: 500;
+}
+/* Section advantage */
+
+/* Section popular */
+.popular__header {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.slider__item-header {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.slider__item-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.slider__controls button {
+    border: none;
+    background-color: transparent;
+}
+/* Section popular */
+
+
+/* Section catalog-divisions */
+.catalog-divisions__list-item {
+    background-color: var(--main-color);
+}
+
+.catalog-divisions__list-item-title {
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.catalog-divisions__list-item-description {
+    color: #ffffff;
+}
+/* Section catalog-divisions */
+
+
+/* Section discount */
 .discount {
-    background-color: #ae7c78;
+    color: #ffffff;
+
+    background-color: var(--main-color);
+}
+
+h2.discount__header {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 59px;
+}
+
+.discount__description {
+    font-size: 24px;
+    background-color: 29px;
+}
+/* Section discount */
+
+
+/* Section features */
+.features__item-title {
+    font-weight: 500;
+}
+/* Section features */
+
+/* Section news */
+.news__description {
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .news__image {
     background-color: #dfe4e8;
 }
+/* Section news */
+
+
+/* Section reviews */
+.reviews__item-author {
+    font-style: normal;
+    font-weight: 500;
+}
+/* Section reviews */
+
+/* Section contacts */
+.contacts__list {
+    background-color: #ffffff;
+}
+
+.contacts__item-title {
+    font-style: normal;
+}
+
+.contacts__item-description {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.contacts__item-description a {
+    text-decoration: none;
+    color: var(--main-color);
+}
 
 .contacts {
     background-color: #fdfaf2;
 }
+/* Section contacts */
 
-.footer {
-    background-color: #ae7c78;
+
+/* Page-footer */
+.page-footer {
+    background-color: var(--main-color);
 }
+
+.secondary-menu__item-link {
+    font: var(--main-font);
+    color: #ffffff;
+}
+/* Page-footer */
 
