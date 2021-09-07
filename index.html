@@ -13,7 +13,7 @@
 </head>
 <body class="main-document">
     <header class="page-header">
-        <a class="logo page-header__logo" href="/"><img src="files/logo-header.svg" alt="Лого"></a>
+        <a class="logo page-header__logo" href="/"><img src="files/logo-header.svg" alt="Лого" width="100"></a>
         <nav class="main-menu">
             <div class="wrapper">
                 <ul class="main-menu__list main-menu__list--reset-list">
@@ -65,15 +65,15 @@
             <section class="advantage">
                 <h2 class="advantage__header main-content__header main-content__header--display_none">Наши преимущества</h2>
                 <dl class="advantage__list">
-                    <div class="advantage__item">
+                    <div class="advantage__item advantage__item--type_delivery">
                         <dt class="advantage__item-title">Быстрая доставка</dt>
                         <dd class="advantage__item-description">Можем собрать букет и передать его в доставку всего за час.</dd>
                     </div>
-                    <div class="advantage__item">
+                    <div class="advantage__item advantage__item--type_bouquet">
                         <dt class="advantage__item-title">Всегда свежие цветы</dt>
                         <dd class="advantage__item-description">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</dd>
                     </div>
-                    <div class="advantage__item">
+                    <div class="advantage__item advantage__item--type_camera">
                         <dt class="advantage__item-title">Отправляем фото цветов</dt>
                         <dd class="advantage__item-description">Перед доставкой сделаем фотографию букета и отправим вам.</dd>
                     </div>
@@ -116,8 +116,10 @@
                 <div class="catalog-divisions__list">
                     <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="catalog-divisions__list-item-title">Свадебные букеты</h2>
-                            <p class="catalog-divisions__list-item-description">Букеты для невест</p>
+                            <div class="catalog-divisions__list-item-data">
+                                <h2 class="catalog-divisions__list-item-title">Свадебные букеты</h2>
+                                <p class="catalog-divisions__list-item-description">Букеты для невест</p>
+                            </div>
                             <img
                                 class="catalog-divisions__list-item-image"
                                 src="files/division-bridal-bouquet.jpg"
@@ -129,8 +131,10 @@
                     </article>
                     <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="catalog-divisions__list-item-title">Букеты с пионами</h2>
-                            <p class="catalog-divisions__list-item-description">Букеты с сезонными пионами</p>
+                            <div class="catalog-divisions__list-item-data">
+                                <h2 class="catalog-divisions__list-item-title">Букеты с пионами</h2>
+                                <p class="catalog-divisions__list-item-description">Букеты с сезонными пионами</p>
+                            </div>
                             <img
                                 class="catalog-divisions__list-item-image"
                                 src="files/division-bouquets-with-peonies.jpg"
@@ -142,8 +146,10 @@
                     </article>
                     <article class="catalog-divisions__list-item">
                         <a href="#">
-                            <h2 class="catalog-divisions__list-item-title">Выбрать букет</h2>
-                            <p class="catalog-divisions__list-item-description">Букеты в ассортименте</p>
+                            <div class="catalog-divisions__list-item-data">
+                                <h2 class="catalog-divisions__list-item-title">Выбрать букет</h2>
+                                <p class="catalog-divisions__list-item-description">Букеты в ассортименте</p>
+                            </div>
                             <img
                                 class="catalog-divisions__list-item-image"
                                 src="files/division-assorted-bouquets.jpg"
@@ -157,7 +163,7 @@
             </section>
 
             <section class="discount" id="discount">
-                <h2 class="discount__header">Скидка 10% на первый заказ</h2>
+                <h2 class="discount__header">Скидка 10% на<br> первый заказ</h2>
                 <p class="discount__description">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
                 <img
                     class="discount__image"
@@ -170,20 +176,20 @@
 
             <section class="features" id="features">
                 <h2 class="features__header">4 шага к идеальному букету</h2>
-                <dl>
-                    <div class="features__item">
+                <dl class="features__list">
+                    <div class="features__item features__item--type_order">
                         <dt class="features__item-title">Заказ</dt>
                         <dd class="features__item-description">Выберите понравившийся букет из каталога и оформите заказ</dd>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item features__item--type_details">
                         <dt class="features__item-title">Уточнение деталей</dt>
                         <dd class="features__item-description">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</dd>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item features__item--type_payment">
                         <dt class="features__item-title">Оплата</dt>
                         <dd class="features__item-description">Оплатить заказ можно онлайн на сайте или при получении</dd>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item features__item--type_delivery">
                         <dt class="features__item-title">Доставка</dt>
                         <dd class="features__item-description">Курьер позвонит за час до прибытия и доставит заказ вовремя</dd>
                     </div>
@@ -194,17 +200,17 @@
                 <h2 class="news__header">Следите за нашими новостями</h2>
                 <p class="news__description">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
                 <ul class="socials socials--reset-list news__socials">
-                    <li class="socials__item socials__item--social_ins">
+                    <li class="socials__item socials__item--color_dark socials__item--social_ins">
                         <a href="#">
                             <span class="socials__item-title socials__item-title--display_none">Инстаграм</span>
                         </a>
                     </li>
-                    <li class="socials__item socials__item--social_fb">
+                    <li class="socials__item socials__item--color_dark socials__item--social_fb">
                         <a href="#">
                             <span class="socials__item-title socials__item-title--display_none">Фейсбук</span>
                         </a>
                     </li>
-                    <li class="socials__item socials__item--social_tw">
+                    <li class="socials__item socials__item--color_dark socials__item--social_tw">
                         <a href="#">
                             <span class="socials__item-title socials__item-title--display_none">Твиттер</span>
                         </a>
@@ -254,31 +260,29 @@
         </div>
 
         <section class="contacts" id="contacts">
-            <div class="wrapper">
+            <address class="contacts__data">
                 <h2 class="contacts__intro">Мы ждем вас</h2>
-                <address class="contacts__list">
-                    <div class="contacts__item">
-                        <span class="contacts__item-title">Приходите к нам:</span>
-                        <span class="contacts__item-description">Санкт-Петербург, ул. Большая Конюшенная, 19</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span class="contacts__item-title">Режим работы:</span>
-                        <span class="contacts__item-description">Пн-Вск, с 9-00 до 20-00</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span class="contacts__item-title">Позвоните нам:</span>
-                        <span class="contacts__item-description">
-                            <a href="tel:+78129834719">+ 7 (812) 983-47-19</a>
-                        </span>
-                    </div>
-                    <div class="contacts__item">
-                        <span class="contacts__item-title">Напишите нам:</span>
-                        <span class="contacts__item-description">
-                            <a href="mailto:info@botanika.ru">info@botanika.ru</a>
-                        </span>
-                    </div>
-                </address>
-            </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Приходите к нам:</span>
+                    <span class="contacts__item-description">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</span>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Режим работы:</span>
+                    <span class="contacts__item-description">Пн-Вск, с 9-00 до 20-00</span>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Позвоните нам:</span>
+                    <span class="contacts__item-description">
+                        <a href="tel:+78129834719">+ 7 (812) 983-47-19</a>
+                    </span>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Напишите нам:</span>
+                    <span class="contacts__item-description">
+                        <a href="mailto:info@botanika.ru">info@botanika.ru</a>
+                    </span>
+                </div>
+            </address>
         </section>
 
     </main>
@@ -287,7 +291,7 @@
         <div class="wrapper">
     
             <a class="logo page-footer__logo" href="#">
-                <img class="logo__image" src="files/logo-footer.svg" alt="Лого">
+                <img class="logo__image" src="files/logo-footer.svg" alt="Лого" width="100">
             </a>
     
             <ul class="secondary-menu secondary-menu--reset-list page-footer__menu">
@@ -309,17 +313,17 @@
             </ul>
     
             <ul class="socials socials--reset-list page-footer__socials">
-                <li class="socials__item socials__item--social_ins">
+                <li class="socials__item socials__item--color_light socials__item--social_ins">
                     <a href="#">
                         <span class="socials__item-title socials__item-title--display_none">Инстаграм</span>
                     </a>
                 </li>
-                <li class="socials__item socials__item--social_fb">
+                <li class="socials__item  socials__item--color_light socials__item--social_fb">
                     <a href="#">
                         <span class="socials_item-title socials__item-title--display_none">Фейсбук</span>
                     </a>
                 </li>
-                <li class="socials__item socials__item--social_tw">
+                <li class="socials__item socials__item--color_light socials__item--social_tw">
                     <a href="#">
                         <span class="socials__item-title socials__item-title--display_none">Твиттер</span>
                     </a>
