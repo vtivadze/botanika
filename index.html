@@ -9,15 +9,17 @@
     <title>Botanika</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
     <header class="page-header">
-        <a class="logo page-header__logo page__a" href="/"><img src="img/logo-header.svg" alt="Лого" width="100"></a>
+        <a class="logo page-header__logo page__a" href="/">
+            <img src="img/logo-header.svg" alt="Лого" width="100">
+        </a>
         <nav class="main-menu">
             <ul class="main-menu__list main-menu__list--reset-list">
                 <li class="main-menu__item">
-                    <a class="main-menu__item-link page__a" href="#catalog-preview">Каталог</a>
+                    <a class="main-menu__item-link page__a" href="#promo">Каталог</a>
                 </li>
                 <li class="main-menu__item">
                     <a class="main-menu__item-link page__a" href="#features">Доставка и оплата</a>
@@ -40,22 +42,22 @@
 
     <main class="page-main">
 
-        <section class="catalog-preview" id="catalog-preview">
-            <div class="catalog-review__contanet">
-                <h1 class="catalog-preview__header page__h page__h--reset-h">Авторские букеты <i class="page__i">в Петербурге</i></h1>
-                <p class="catalog-preview__intro page__p page__p--reset-p">Оригинальные свежие букеты с доставкой по всему городу</p>
-                <a href="#" class="button catalog-preview__button page__a">Смотреть каталог</a>
+        <section class="promo" id="promo">
+            <div class="promo__content">
+                <h1 class="promo__header page__h page__h--reset-h">Авторские букеты <i class="page__i">в Петербурге</i></h1>
+                <p class="promo__intro page__p page__p--reset-p">Оригинальные свежие букеты с доставкой по всему городу</p>
+                <a href="#" class="button promo__button page__a">Смотреть каталог</a>
             </div>
 
             <img
-                class="catalog-preview__image catalog-preview__image--horizontally_left catalog-preview__image--vertically_bottom"
+                class="promo__image promo__image--horizontally_left promo__image--vertically_bottom"
                 src="img/catalog-bouquet-with-tulips.jpg"
                 alt="Неповторимый свежий букет тюльпан"
                 width="386"
                 height="404"
             >
             <img
-                class="catalog-preview__image catalog-preview__image--horizontally_right catalog-preview__image--vertically_top"
+                class="promo__image promo__image--horizontally_right promo__image--vertically_top"
                 src="img/catalog-bouquet-with-rouses.jpg"
                 alt="Неповторимый свежий букет роз"
                 width="387"
@@ -63,7 +65,7 @@
             >
 
             <div class="advantage">
-                <h2 class="advantage__header main-content__header main-content__header--display_none">Наши преимущества</h2>
+                <h2 class="advantage__header page__header page__header--display_none">Наши преимущества</h2>
                 <dl class="advantage__list page__dl page__dl--reset-dl">
                     <div class="advantage__item advantage__item--type_delivery">
                         <dt class="advantage__item-title">Быстрая доставка</dt>
@@ -178,18 +180,18 @@
                 <h2 class="news__header page__h page__h--reset-h">Следите за нашими новостями</h2>
                 <p class="news__description page__p page__p--reset-p">Подписывайтесь на наши соцсети и узнавайте<br> о новинках и акциях первым.</p>
                 <ul class="socials socials--reset-list news__socials">
-                    <li class="socials__item socials__item--color_dark socials__item--social_ins">
-                        <a class="page__a" href="#">
+                    <li class="socials__item">
+                        <a class="socials__ins socials__ins--color_dark page__a" href="#">
                             <span class="socials__item-title socials__item-title--display_none">Инстаграм</span>
                         </a>
                     </li>
-                    <li class="socials__item socials__item--color_dark socials__item--social_fb">
-                        <a class="page__a" href="#">
+                    <li class="socials__item">
+                        <a class="socials__fb socials__fb--color_dark page__a" href="#">
                             <span class="socials__item-title socials__item-title--display_none">Фейсбук</span>
                         </a>
                     </li>
-                    <li class="socials__item socials__item--color_dark socials__item--social_tw">
-                        <a class="page__a" href="#">
+                    <li class="socials__item">
+                        <a class="socials__tw socials__tw--color_dark page__a" href="#">
                             <span class="socials__item-title socials__item-title--display_none">Твиттер</span>
                         </a>
                     </li>
@@ -240,6 +242,7 @@
 
     <footer class="page-footer">
         <section class="page-footer__top contacts" id="contacts">
+            <h2 class="contacts__header page__header page__header--display_none">Контактная информация</h2>
             <img class="contacts__map" src="img/map.png" alt="Карта местности" width="1440" height="645">
             <address class="contacts__data page__address page__address--reset-address">
                 <p class="contacts__intro page__p page__p--reset-p">Мы ждем вас</p>
@@ -273,7 +276,7 @@
 
             <ul class="secondary-menu secondary-menu--reset-list page-footer__menu">
                 <li class="secondary-menu__item">
-                    <a class="secondary-menu__item-link page__a" href="#catalog-preview">Каталог</a>
+                    <a class="secondary-menu__item-link page__a" href="#promo">Каталог</a>
                 </li>
                 <li class="secondary-menu__item">
                     <a class="secondary-menu__item-link page__a" href="#features">Доставка и оплата</a>
@@ -290,18 +293,18 @@
             </ul>
 
             <ul class="socials socials--reset-list page-footer__socials">
-                <li class="socials__item socials__item--color_light socials__item--social_ins">
-                    <a class="page__a" href="#">
+                <li class="socials__item">
+                    <a class="socials__ins socials__ins--color_light page__a" href="#">
                         <span class="socials__item-title socials__item-title--display_none">Инстаграм</span>
                     </a>
                 </li>
-                <li class="socials__item  socials__item--color_light socials__item--social_fb">
-                    <a class="page__a" href="#">
+                <li class="socials__item">
+                    <a class="socials__fb socials__fb--color_light page__a" href="#">
                         <span class="socials_item-title socials__item-title--display_none">Фейсбук</span>
                     </a>
                 </li>
-                <li class="socials__item socials__item--color_light socials__item--social_tw">
-                    <a class="page__a" href="#">
+                <li class="socials__item">
+                    <a class="socials__tw socials__tw--color_light page__a" href="#">
                         <span class="socials__item-title socials__item-title--display_none">Твиттер</span>
                     </a>
                 </li>
