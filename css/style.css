@@ -105,8 +105,6 @@
 
     font: var(--main-font);
     color: var(--main-color);
-    
-    background-color: #e5e5e5;
 }
 
 .page__a > img {
@@ -284,17 +282,19 @@
 }
 
 .main-menu__item:nth-child(3) {
-   margin-right: auto;
+   margin-right: 200px;
 }
 
 .main-menu__item-link {
     position: relative;
 
-    display: block;
+    display: inline-block;
     padding: 22px 0;
 
     font: var(--main-font);
     color: var(--main-color);
+
+    white-space: nowrap;
 }
 
 .main-menu__item-link::after {
@@ -586,7 +586,7 @@
 
 .discount__content {
     padding-top: 40px;
-    padding-right: 20px;
+    padding-right: 120px;
     padding-bottom: 65px;
     padding-left: calc(var(--one-column) + var(--column-gap));
 }
